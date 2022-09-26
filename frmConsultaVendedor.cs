@@ -30,7 +30,7 @@ namespace pryBaldovinoSP1EPR
             {
                 string DatosVendedor = Vendedor.ReadLine();
                 string[] vecDatosVendedor = DatosVendedor.Split(';');
-                dgvConsultaVendedor.Rows.Add(vecDatosVendedor[0], vecDatosVendedor[1]);
+                dgvConsultaVendedor.Rows.Add(vecDatosVendedor[0], vecDatosVendedor[1], vecDatosVendedor[2], vecDatosVendedor[3]);
             }
             Vendedor.Close();
         }

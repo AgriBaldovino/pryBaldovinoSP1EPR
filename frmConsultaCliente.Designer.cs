@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaCliente));
             this.dgvConsultaClientes = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -95,11 +96,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(272, 197);
+            this.ClientSize = new System.Drawing.Size(264, 197);
             this.Controls.Add(this.cmdMostrar);
             this.Controls.Add(this.cmdSalir);
             this.Controls.Add(this.cmdLimpiar);
             this.Controls.Add(this.dgvConsultaClientes);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConsultaCliente";
             this.Text = "Consulta cliente";
             this.Load += new System.EventHandler(this.frmConsultaCliente_Load);

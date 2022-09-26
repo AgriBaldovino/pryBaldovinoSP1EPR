@@ -11,9 +11,9 @@ using System.IO;
 
 namespace pryBaldovinoSP1EPR
 {
-    public partial class frmFormulario : Form
+    public partial class frmFormularioPrincipal : Form
     {
-        public frmFormulario()
+        public frmFormularioPrincipal()
         {
             InitializeComponent();
         }

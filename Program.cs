@@ -16,7 +16,7 @@ namespace pryBaldovinoSP1EPR
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmFormulario());
+            Application.Run(new frmFormularioPrincipal());
         }
     }
 }

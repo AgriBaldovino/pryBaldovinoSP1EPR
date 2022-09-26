@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCliente));
             this.lblIdentificacion = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtIdentificacion = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.cmdRegistrar = new System.Windows.Forms.Button();
             this.cmdSalir = new System.Windows.Forms.Button();
+            this.cmdBorrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblIdentificacion
@@ -70,9 +72,9 @@
             // 
             // cmdRegistrar
             // 
-            this.cmdRegistrar.Location = new System.Drawing.Point(128, 82);
+            this.cmdRegistrar.Location = new System.Drawing.Point(147, 82);
             this.cmdRegistrar.Name = "cmdRegistrar";
-            this.cmdRegistrar.Size = new System.Drawing.Size(75, 23);
+            this.cmdRegistrar.Size = new System.Drawing.Size(61, 23);
             this.cmdRegistrar.TabIndex = 4;
             this.cmdRegistrar.Text = "Registrar";
             this.cmdRegistrar.UseVisualStyleBackColor = true;
@@ -80,25 +82,37 @@
             // 
             // cmdSalir
             // 
-            this.cmdSalir.Location = new System.Drawing.Point(15, 82);
+            this.cmdSalir.Location = new System.Drawing.Point(7, 82);
             this.cmdSalir.Name = "cmdSalir";
-            this.cmdSalir.Size = new System.Drawing.Size(75, 23);
+            this.cmdSalir.Size = new System.Drawing.Size(49, 23);
             this.cmdSalir.TabIndex = 5;
             this.cmdSalir.Text = "Salir";
             this.cmdSalir.UseVisualStyleBackColor = true;
             this.cmdSalir.Click += new System.EventHandler(this.cmdSalir_Click);
+            // 
+            // cmdBorrar
+            // 
+            this.cmdBorrar.Location = new System.Drawing.Point(75, 82);
+            this.cmdBorrar.Name = "cmdBorrar";
+            this.cmdBorrar.Size = new System.Drawing.Size(53, 23);
+            this.cmdBorrar.TabIndex = 6;
+            this.cmdBorrar.Text = "Borrar";
+            this.cmdBorrar.UseVisualStyleBackColor = true;
+            this.cmdBorrar.Click += new System.EventHandler(this.cmdBorrar_Click);
             // 
             // frmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(221, 117);
+            this.Controls.Add(this.cmdBorrar);
             this.Controls.Add(this.cmdSalir);
             this.Controls.Add(this.cmdRegistrar);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtIdentificacion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblIdentificacion);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCliente";
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.frmCliente_Load);
@@ -115,5 +129,6 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button cmdRegistrar;
         private System.Windows.Forms.Button cmdSalir;
+        private System.Windows.Forms.Button cmdBorrar;
     }
 }

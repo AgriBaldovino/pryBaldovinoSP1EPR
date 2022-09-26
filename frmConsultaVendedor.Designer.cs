@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaVendedor));
             this.cmdLimpiar2 = new System.Windows.Forms.Button();
             this.cmdMostrar2 = new System.Windows.Forms.Button();
             this.dgvConsultaVendedor = new System.Windows.Forms.DataGridView();
+            this.cmdSalir = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cmdSalir = new System.Windows.Forms.Button();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaVendedor)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,21 +65,13 @@
             this.dgvConsultaVendedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsultaVendedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
-            this.Column2});
+            this.Column2,
+            this.Column3,
+            this.Column4});
             this.dgvConsultaVendedor.Location = new System.Drawing.Point(12, 12);
             this.dgvConsultaVendedor.Name = "dgvConsultaVendedor";
-            this.dgvConsultaVendedor.Size = new System.Drawing.Size(240, 150);
+            this.dgvConsultaVendedor.Size = new System.Drawing.Size(422, 150);
             this.dgvConsultaVendedor.TabIndex = 4;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Identificacion";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
             // 
             // cmdSalir
             // 
@@ -88,15 +83,36 @@
             this.cmdSalir.UseVisualStyleBackColor = true;
             this.cmdSalir.Click += new System.EventHandler(this.cmdSalir_Click);
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Identificacion";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Activo";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Cobra comision";
+            this.Column4.Name = "Column4";
+            // 
             // frmConsultaVendedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(263, 197);
+            this.ClientSize = new System.Drawing.Size(446, 197);
             this.Controls.Add(this.cmdSalir);
             this.Controls.Add(this.cmdLimpiar2);
             this.Controls.Add(this.cmdMostrar2);
             this.Controls.Add(this.dgvConsultaVendedor);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConsultaVendedor";
             this.Text = "Consulta vendedor";
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaVendedor)).EndInit();
@@ -108,8 +124,10 @@
         private System.Windows.Forms.Button cmdLimpiar2;
         private System.Windows.Forms.Button cmdMostrar2;
         private System.Windows.Forms.DataGridView dgvConsultaVendedor;
+        private System.Windows.Forms.Button cmdSalir;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.Button cmdSalir;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }

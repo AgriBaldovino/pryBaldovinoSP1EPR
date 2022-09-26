@@ -22,7 +22,6 @@ namespace pryBaldovinoSP1EPR
         {
             dgvConsultaVentas.Rows.Clear();
         }
-
         private void cmdMostrar3_Click(object sender, EventArgs e)
         {
             StreamReader Ventas = new StreamReader("./Ventas.csv");
@@ -30,11 +29,10 @@ namespace pryBaldovinoSP1EPR
             {
                 string DatosVentas = Ventas.ReadLine();
                 string[] vecDatosVentas = DatosVentas.Split(';');
-                dgvConsultaVentas.Rows.Add(vecDatosVentas[0], vecDatosVentas[1], vecDatosVentas[2], vecDatosVentas[3]);
+                dgvConsultaVentas.Rows.Add(vecDatosVentas[0], vecDatosVentas[1], vecDatosVentas[2], vecDatosVentas[3], vecDatosVentas[4], vecDatosVentas[5]);
             }
             Ventas.Close();
         }
-
         private void cmdSalir_Click(object sender, EventArgs e)
         {
             this.Close();
